@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./presto_Max.css">
+    <link rel="stylesheet" href="./presto_Max.css" media="screen and (max-width:500px)">
+    <title>Presto.it</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex" href="#carouselPresto"><img class="me-2" src="./img/logo.png" alt="Logo">
+                    <h2 class="d-inline m-0  logo-color">
+                        Presto.it
+                    </h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-hov" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hov" href="./annunci/annunci_Max.html">Annunci</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link nav-hov" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorie
+                                </button>
+                                <ul id="dropdowncategory" class="dropdown-menu">
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <button class="btn-nav-custom">
+                                    Home
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!--Form section-->
+
+        <section class="pt-5 pb-5">
+
+            <form id="formconnect">
+                <div class="container mt-4">
+                    <div class="row div-form-bgc p-4">
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nameSearch" placeholder="Cerca">
+                                <label for="nameSearch">Cerca</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 pt-3 pt-md-0">
+                            <div class="form-floating">
+                                <select class="form-select" id="categorySearch">
+                                    <option selected value="">Seleziona una categoria</option>
+                                </select>
+                                <label for="categorySearch">Filtra la tua ricerca</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 pt-3 pt-md-0">
+                            <div class="form-floating">
+                                <select class="form-select" id="ordPosts">
+                                    <option selected value="">Nessun ordine</option>
+                                    <option value="decNumber">Dalla più popolata di annunci</option>
+                                    <option value="creNumber">Dalla meno popolata di annunci</option>
+                                    <option value="creAlpha">Dalla A alla Z</option>
+                                    <option value="decAlpha">Dalla Z alla A</option>
+                                </select>
+                                <label for="ordPosts">Ordina Annunci</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 pt-3 pt-md-0">
+                            <div class="d-grid d-block h-100">
+                                <button class="btn button-form" type="submit">Submit form</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <!--Carousel section-->
+
+        <section id="carouselPresto" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carousel-h" data-bs-interval="10000">
+                                    <img src="https://images.pexels.com/photos/975250/pexels-photo-975250.jpeg?auto=compress&cs=tinysrgb&w=600/200"
+                                        class="d-block w-100" alt="Foto Shopping">
+                                </div>
+                                <div class="carousel-item carousel-h" data-bs-interval="10000">
+                                    <img src="https://images.pexels.com/photos/1050244/pexels-photo-1050244.jpeg?auto=compress&cs=tinysrgb&w=600/200"
+                                        class="d-block w-100" alt="Foto Shopping 2">
+                                </div>
+                                <div class="carousel-item carousel-h" data-bs-interval="10000">
+                                    <img src="https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/200"
+                                        class="d-block w-100" alt="Foto Shopping 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Categories Section-->
+        <section class="pb-5">
+            <div class="container">
+                <div class="row section-bg pb-5">
+                    <div class="col-md-3"></div>
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                        <h2 class="display-5 pt-5">
+                            Le nostre <span class="categories-title">Categorie</span>
+                        </h2>
+                        <p id="dropdown-link" class="lead text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimos labore nisi
+                            fuga consectetur quibusdam libero placeat distinctio provident suscipit voluptate odio
+                            delectus, illo quisquam aliquid laborum eos eaque minus.
+                        </p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div id="card-container" class="row section-bg px-2">
+
+                </div>
+            </div>
+        </section>
+
+        <!--Lavora con noi-->
+
+        <section class="py-5">
+            <form class="container needs-validation" id="formWwu" novalidate>           
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid p-5" src="./img/workWithUs.jpg" alt="Foto Shopping">
+                        </div>
+
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                            <h2 class="display-5">
+                                Lavora <span class="wwu-title">con noi</span>
+                            </h2>
+                            <p class="pb-4 lead">
+                                Invia la tua candidatura per far parte del nostro team di Presto
+                            </p>
+                            <div class="form-floating pb-4">
+                                <input type="text" class="form-control" id="textnameuser" placeholder="Nome e Cognome" required>
+                                <label for="textnameuser">Nome e Cognome</label>
+                                <div class="valid-feedback">
+                                    Grazie.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Non hai inserito un Nome e Cognome validi.
+                                </div>
+                              </div>
+
+                              <div class="form-floating pb-4">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                                <label for="floatingInput">Email</label>
+                                <div class="valid-feedback">
+                                    Grazie.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Non hai inserito un Email valida.
+                                </div>
+                              </div>
+                              <div class="form-floating pb-4">
+                                <textarea id="areains" class="form-control" placeholder="Inserisci una breve descrizione" required></textarea>
+                                <label for="areains">Inserisci una breve descrizione</label>
+                                <div class="valid-feedback">
+                                    Grazie.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Scrivile due righe dai...
+                                </div>
+                              </div>
+                              <div class="d-grid justify-content-center py-3">
+                                <button class="btn button-wwu" type="submit">Invia la Candidatura</button>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="pt-5">
+        <div class="card text-center">
+            <div class="card-header footersml-bg p-0">
+              Info:
+            </div>
+            <div class="card-body footerbig-bg p-0">
+              <h5 class="card-title display-6 footer-title">Presto.it</h5>
+              <p class="card-text pb-2">Crotone, 88900. P.Iva: IT00000000000</p>
+            </div>
+            <div class="card-footer footersml-bg pt-2">
+              <a class="bi bi-whatsapp footer-icon" href="#"></a>
+              <a class="bi bi-facebook footer-icon" href="#"></a>
+              <a class="bi bi-instagram footer-icon" href="#"></a>
+              <a class="bi bi-twitter footer-icon" href="#"></a>
+            </div>
+          </div>
+    </footer>
+
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Js-->
+    <script src="./presto_Max.js"></script>
+</body>
+
+</html>

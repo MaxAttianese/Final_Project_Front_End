@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./annunci_Max.css">
+
+    <title>Annunci</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex" href="#carouselPresto"><img class="me-2" src="./img/logo.png"
+                        alt="Logo">
+                    <h2 class="d-inline m-0  logo-color">
+                        Presto.it
+                    </h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-hov" aria-current="page" href="/presto_Max.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hov" href="#ads-section">Annunci</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link nav-hov" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorie
+                                </button>
+                                <ul id="dropdowncategory" class="dropdown-menu">
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <button class="btn-nav-custom">
+                                    Home
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Search Form-->
+
+        <section class="pt-5 pb-5">
+            <form id="filteredSearch">
+                <div class="container pt-4">
+                    <div class="row div-form-bgc pt-2 pb-4 px-2">
+                        <div class="col-12 col-md-6 pt-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="searchBarPosts" placeholder="Cerca">
+                                <label for="searchBarPosts">Cerca</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pt-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="filterCategory">
+                                    <option selected value="">Tutti gli annunci</option>
+                                </select>
+                                <label for="filterCategory">Filtra per categorie</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pt-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 pt-md-3">
+                                    <div class="form-floating">
+                                        <input type="number" min="0" class="form-control" id="minPrcOrd"
+                                            placeholder="Cerca">
+                                        <label for="minPrcOrd">Min Price</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 pt-3">
+                                    <div class="form-floating">
+                                        <input type="number" min="0" class="form-control" id="maxPrcOrd"
+                                            placeholder="Cerca">
+                                        <label for="maxPrcOrd">Max Price</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pt-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 pt-md-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="ordPosts">
+                                            <option selected value="">Nessun ordine</option>
+                                            <option value="decTime">Dal più recente</option>
+                                            <option value="creTime">Dal meno recente</option>
+                                            <option value="decPrice">Dal prezzo più alto</option>
+                                            <option value="crePrice">Dal prezzo più basso</option>
+                                            <option value="creAlpha">Dalla A alla Z</option>
+                                            <option value="decAlpha">Dalla Z alla A</option>
+                                        </select>
+                                        <label for="ordPosts">Ordina Annunci</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 pt-3">
+                                    <div class="d-grid d-block h-100">
+                                        <button class="btn button-form" type="submit" value="Cerca"
+                                            id="searchBtn">Cerca</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="pb-5">
+
+            <!--Ads Section-->
+            <div id="ads-section" class="container">
+                <div id="ads" class="row">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer class="pt-5">
+        <div class="card text-center">
+            <div class="card-header footersml-bg p-0">
+              Info:
+            </div>
+            <div class="card-body footerbig-bg p-0">
+              <h5 class="card-title display-6 footer-title">Presto.it</h5>
+              <p class="card-text pb-2">Crotone, 88900. P.Iva: IT00000000000</p>
+            </div>
+            <div class="card-footer footersml-bg pt-2">
+              <a class="bi bi-whatsapp footer-icon" href="#"></a>
+              <a class="bi bi-facebook footer-icon" href="#"></a>
+              <a class="bi bi-instagram footer-icon" href="#"></a>
+              <a class="bi bi-twitter footer-icon" href="#"></a>
+            </div>
+          </div>
+    </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Js-->
+    <script src="./annunci_Max.js"></script>
+</body>
+
+</html>

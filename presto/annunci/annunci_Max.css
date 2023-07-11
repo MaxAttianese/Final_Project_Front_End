@@ -1,0 +1,234 @@
+/* Variabili cardine sito*/
+
+:root {
+    --primary-color: #00b98e;
+    --primary-dark-color: #02ab83;
+    --primary-light-color: #02ab83;
+    --accent-color: #0e2e50;
+
+    --pastello: #EFFDF5;
+    --neutral: #666565;
+
+    --btn-carousel-size: 48px;
+
+    --btn--sell-color: #dc3545;
+}
+
+
+/*Body custom*/
+
+body {
+    background-color: var(--pastello);
+}
+
+
+.section-bg {
+
+    background-color: white;
+
+}
+
+/*Navbar Custom*/
+
+
+/* logo color*/
+
+.logo-color {
+
+    color: var(--primary-color) !important;
+
+}
+/* Navbar link Custom*/
+
+.nav-hov {
+
+    color: black;
+}
+  
+.nav-hov:hover {
+  
+    color: var(--primary-color);
+}
+
+/* navbar button custom*/
+
+.btn-nav-custom {
+
+    height: 40px;
+
+    color: white;
+
+    background-color: var(--primary-color);
+
+    border: 0;
+
+    border-radius: 10%;
+}
+
+.btn-nav-custom:hover {
+
+    background-color: var(--accent-color);
+  
+  }
+
+/* Dorpdown button custom */
+
+.dropdown-link {
+
+    text-decoration: none;
+  
+    color: var(--accent-color);
+  
+}
+  
+.dropdown-link:hover {
+  
+    background-color: var(--primary-light-color);
+  
+}
+  
+.dropdown-link:hover > a {
+  
+    color: white;
+    
+}
+  
+
+/*Form custom*/
+
+.div-form-bgc {
+
+    background-color: var(--primary-color);
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+
+.button-form {
+
+    background-color: var(--accent-color);
+
+    color: white;
+
+    border: 0;
+}
+
+.button-form:hover {
+
+    background-color: var(--accent-color);
+
+    color: var(--primary-color);
+
+    border: 0;
+}
+
+
+
+/* Card Custom*/
+
+.div-img-h{
+
+    height: 300px;
+
+}
+
+.div-cl-h{
+
+    height: 200px;
+    
+}
+
+.btn-wwu-sell{
+
+    border: transparent;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-weight: bold;
+
+    background-color: var(--btn--sell-color);
+
+}
+
+.btn-wwu-search{
+
+    border: transparent;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-weight: bold;
+
+    background-color: var(--primary-color);
+
+}
+
+.price-color{
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    font-weight: bold;
+
+}
+
+.icon-card {
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+}
+
+
+/* footer Custom */
+
+.footerbig-bg {
+
+    background-color: var(--pastello);
+  
+}
+  
+.footersml-bg {
+  
+    background-color: var(--primary-light-color);
+  
+    color: white;
+  
+}
+  
+.footer-title {
+  
+    color: var(--primary-color);
+  
+    font-weight: bold;
+  
+}
+  
+.footer-icon{
+  
+    font-size: 20px;
+  
+    text-decoration: none;
+  
+    color: white;
+  
+    padding-left: 3px;
+  
+    padding-right: 3px;
+  
+}
+  
+.footer-icon:hover {
+  
+    color: var(--accent-color);
+
+}

@@ -1,0 +1,313 @@
+/* Variabili cardine sito*/
+
+:root {
+    --primary-color: #00b98e;
+    --primary-dark-color: #02ab83;
+    --primary-light-color: #02ab83;
+    --accent-color: #0e2e50;
+
+    --pastello: #EFFDF5;
+    --neutral: #666565;
+
+    --btn-carousel-size: 48px;
+}
+
+.section-bg{
+  
+  background-color: white;
+
+}
+
+/*Body custom*/
+
+body{
+    background-color: var(--pastello);
+}
+
+
+/*Navbar Custom*/
+
+
+/* logo color*/
+
+.logo-color{
+
+    color: var(--primary-color) !important;
+
+}
+
+/* Navbar link Custom*/
+
+.nav-hov {
+
+  color: black;
+}
+
+.nav-hov:hover {
+
+  color: var(--primary-color);
+}
+
+
+/* navbar button custom*/
+
+.btn-nav-custom{
+
+    height: 40px;
+
+    color: white;
+
+    background-color: var(--primary-color);
+
+    border: 0;
+
+    border-radius: 10%;
+}
+
+.btn-nav-custom:hover {
+
+  background-color: var(--accent-color);
+
+}
+
+
+/* Dorpdown button custom */
+
+.dropdown-link {
+
+  text-decoration: none;
+
+  color: var(--accent-color);
+
+}
+
+.dropdown-link:hover {
+
+  background-color: var(--primary-light-color);
+
+}
+
+.dropdown-link:hover > a {
+
+  color: white;
+  
+}
+
+
+
+/*Form custom*/
+
+.div-form-bgc{
+
+  background-color: var(--primary-color);
+
+  border-radius: 12px;
+
+}
+
+.button-form{
+
+  background-color: var(--accent-color);
+  
+  color: white;
+
+  border: 0;
+}
+
+.button-form:hover {
+  
+  background-color: var(--accent-color);
+
+  color: var(--primary-color);
+
+  border: 0;
+}
+
+
+/*Caurosel Custom*/
+
+.carousel-h{
+
+  height: 500px;
+
+}
+
+
+/*Categories section*/
+
+/*title section*/
+
+.categories-title{
+
+  font-weight: bold;
+
+  color: var(--primary-color);
+
+}
+
+/*Categories card custom*/
+
+.circle-aiplane{
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 50px;
+
+  height: 50px;
+
+  border: 2px var(--primary-color);
+
+  border-style: dashed;
+
+  border-radius: 50%;
+}
+
+.color-card{
+
+  color: var(--primary-color);
+
+}
+
+.card-bgc{
+
+  background-color: var(--pastello);
+
+}
+
+.card-bdash{
+
+  border: 2px var(--primary-color);
+
+  border-style: dashed;
+
+}
+
+.card-bdash:hover{
+
+  background-color: var(--primary-color);
+
+}
+
+.card-bdash:hover div div{
+
+  background-color: white;
+
+}
+
+.card-bdash:hover div p{
+
+  color: white;
+
+}
+
+/* Work whit us custom*/
+
+
+.wwu-title{
+
+  font-weight: bold;
+
+  color: var(--primary-color);
+
+}
+
+.button-wwu{
+  width: 250px;
+
+  background-color: var(--primary-color);
+  
+  color: white;
+
+  border: 0;
+
+}
+
+.button-wwu:hover {
+  
+  background-color: var(--primary-color);
+
+  color: var(--accent-color);
+
+  border: 0;
+}
+
+/* footer Custom */
+
+.footerbig-bg {
+
+  background-color: var(--pastello);
+
+}
+
+.footersml-bg {
+
+  background-color: var(--primary-light-color);
+
+  color: white;
+
+}
+
+.footer-title {
+
+  color: var(--primary-color);
+
+  font-weight: bold;
+
+}
+
+.footer-icon{
+
+  font-size: 20px;
+
+  text-decoration: none;
+
+  color: white;
+
+  padding-left: 3px;
+
+  padding-right: 3px;
+
+}
+
+.footer-icon:hover {
+
+  color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media-queries*/
+
+/*Caurosel Custom*/
+
+@media screen and (max-width:500px) {
+
+  .carousel-h{
+
+    height: 250px;
+  
+  };
+  
+}
